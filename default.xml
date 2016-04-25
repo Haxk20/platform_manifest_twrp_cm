@@ -13,6 +13,10 @@
   <remote  name="private"
            fetch="ssh://git@github.com" />
 
+  <remote  name="TeamWin"
+           review="gerrit.twrp.me"
+           fetch="https://github.com/TeamWin" />
+
   <default revision="refs/heads/cm-12.1"
            remote="github"
            sync-c="true"
@@ -24,119 +28,119 @@
 
   <project path="android" name="CyanogenMod/android" />
 
-  <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" groups="pdk" />
-  <project path="art" name="CyanogenMod/android_art" groups="pdk" />
+  <!--project path="abi/cpp" name="CyanogenMod/android_abi_cpp" groups="pdk" />
+  <!--project path="art" name="CyanogenMod/android_art" groups="pdk" />
   <project path="bionic" name="CyanogenMod/android_bionic" groups="pdk" />
   <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" groups="pdk" />
-  <project path="cts" name="CyanogenMod/android_cts" groups="cts,pdk-cw-fs" />
-  <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs" remote="aosp" />
-  <project path="developers/build" name="platform/developers/build" remote="aosp" />
-  <project path="developers/demos" name="platform/developers/demos" remote="aosp" />
-  <project path="developers/docs" name="platform/developers/docs" remote="aosp" />
-  <project path="developers/samples/android" name="platform/developers/samples/android" remote="aosp" />
-  <project path="development" name="CyanogenMod/android_development" groups="pdk-cw-fs" />
-  <project path="device/common" name="CyanogenMod/android_device_common" groups="pdk-cw-fs" />
-  <project path="device/generic/arm64" name="CyanogenMod/android_device_generic_arm64" groups="pdk" />
-  <project path="device/generic/armv7-a-neon" name="CyanogenMod/android_device_generic_armv7-a-neon" groups="pdk" />
-  <project path="device/generic/common" name="CyanogenMod/android_device_generic_common" groups="pdk" />
+  <!--project path="cts" name="CyanogenMod/android_cts" groups="cts,pdk-cw-fs" />
+  <!--project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs" remote="aosp" />
+  <!--project path="developers/build" name="platform/developers/build" remote="aosp" />
+  <!--project path="developers/demos" name="platform/developers/demos" remote="aosp" />
+  <!--project path="developers/docs" name="platform/developers/docs" remote="aosp" />
+  <!--project path="developers/samples/android" name="platform/developers/samples/android" remote="aosp" />
+  <!--project path="development" name="CyanogenMod/android_development" groups="pdk-cw-fs" />
+  <!--project path="device/common" name="CyanogenMod/android_device_common" groups="pdk-cw-fs" />
+  <!--project path="device/generic/arm64" name="CyanogenMod/android_device_generic_arm64" groups="pdk" />
+  <!--project path="device/generic/armv7-a-neon" name="CyanogenMod/android_device_generic_armv7-a-neon" groups="pdk" />
+  <!--project path="device/generic/common" name="CyanogenMod/android_device_generic_common" groups="pdk" />
   <project path="device/generic/goldfish" name="CyanogenMod/android_device_generic_goldfish" groups="pdk" />
-  <project path="device/generic/mips" name="CyanogenMod/android_device_generic_mips" groups="pdk" />
-  <project path="device/generic/mini-emulator-arm64" name="device/generic/mini-emulator-arm64" groups="pdk" remote="aosp" />
-  <project path="device/generic/mini-emulator-armv7-a-neon" name="device/generic/mini-emulator-armv7-a-neon" groups="pdk" remote="aosp" />
-  <project path="device/generic/mini-emulator-mips" name="device/generic/mini-emulator-mips" groups="pdk" remote="aosp" />
-  <project path="device/generic/mini-emulator-x86" name="device/generic/mini-emulator-x86" groups="pdk" remote="aosp" />
-  <project path="device/generic/mini-emulator-x86_64" name="device/generic/mini-emulator-x86_64" groups="pdk" remote="aosp" />
-  <project path="device/generic/qemu" name="device/generic/qemu" remote="aosp" />
-  <project path="device/generic/x86" name="device/generic/x86" groups="pdk" remote="aosp" />
-  <project path="device/generic/x86_64" name="device/generic/x86_64" groups="pdk" remote="aosp" />
-  <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" remote="aosp" />
-  <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" remote="aosp" />
-  <project path="device/google/atv" name="CyanogenMod/android_device_google_atv" groups="device" />
-  <project path="device/qcom/sepolicy" name="CyanogenMod/android_device_qcom_sepolicy" />
-  <project path="device/sample" name="device/sample" groups="pdk" remote="aosp" />
-  <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs" remote="aosp" />
-  <project path="external/aac" name="platform/external/aac" groups="pdk" remote="aosp" />
-  <project path="external/android-clat" name="platform/external/android-clat" groups="pdk-cw-fs" remote="aosp" />
-  <project path="external/android-mock" name="CyanogenMod/android_external_android-mock" />
-  <project path="external/android-visualizer" name="CyanogenMod/android_external_android-visualizer" />
-  <project path="external/android/support-prebuilt" name="CyanogenMod/external_android_support-prebuilt" revision="master" />
-  <project path="external/ant-glob" name="CyanogenMod/android_external_ant-glob" groups="pdk-cw-fs" />
-  <project path="external/ant-wireless/ant_native" name="CyanogenMod/android_external_ant-wireless_ant_native" />
-  <project path="external/ant-wireless/ant_service" name="CyanogenMod/android_external_ant-wireless_ant_service" />
-  <project path="external/ant-wireless/antradio-library" name="CyanogenMod/android_external_ant-wireless_antradio-library" />
-  <project path="external/antlr" name="platform/external/antlr" groups="pdk-cw-fs,tradefed" remote="aosp" />
-  <project path="external/apache-harmony" name="platform/external/apache-harmony" groups="pdk-cw-fs" remote="aosp" />
-  <project path="external/apache-http" name="platform/external/apache-http" groups="pdk-cw-fs" remote="aosp" />
-  <project path="external/apache-qp" name="platform/external/apache-qp" groups="pdk-cw-fs" remote="aosp" />
-  <project path="external/apache-xml" name="platform/external/apache-xml" groups="pdk-cw-fs" remote="aosp" />
-  <project path="external/arduino" name="platform/external/arduino" groups="pdk-cw-fs" remote="aosp" />
-  <project path="external/bash" name="CyanogenMod/android_external_bash" />
+  <!--project path="device/generic/mips" name="CyanogenMod/android_device_generic_mips" groups="pdk" />
+  <!--project path="device/generic/mini-emulator-arm64" name="device/generic/mini-emulator-arm64" groups="pdk" remote="aosp" />
+  <!--project path="device/generic/mini-emulator-armv7-a-neon" name="device/generic/mini-emulator-armv7-a-neon" groups="pdk" remote="aosp" />
+  <!--project path="device/generic/mini-emulator-mips" name="device/generic/mini-emulator-mips" groups="pdk" remote="aosp" />
+  <!--project path="device/generic/mini-emulator-x86" name="device/generic/mini-emulator-x86" groups="pdk" remote="aosp" />
+  <!--project path="device/generic/mini-emulator-x86_64" name="device/generic/mini-emulator-x86_64" groups="pdk" remote="aosp" />
+  <!--project path="device/generic/qemu" name="device/generic/qemu" remote="aosp" />
+  <!--project path="device/generic/x86" name="device/generic/x86" groups="pdk" remote="aosp" />
+  <!--project path="device/generic/x86_64" name="device/generic/x86_64" groups="pdk" remote="aosp" />
+  <!--project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" remote="aosp" />
+  <!--project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" remote="aosp" />
+  <!--project path="device/google/atv" name="CyanogenMod/android_device_google_atv" groups="device" />
+  <!--project path="device/qcom/sepolicy" name="CyanogenMod/android_device_qcom_sepolicy" />
+  <!--project path="device/sample" name="device/sample" groups="pdk" remote="aosp" />
+  <!--project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs" remote="aosp" />
+  <!--project path="external/aac" name="platform/external/aac" groups="pdk" remote="aosp" />
+  <!--project path="external/android-clat" name="platform/external/android-clat" groups="pdk-cw-fs" remote="aosp" />
+  <!--project path="external/android-mock" name="CyanogenMod/android_external_android-mock" />
+  <!--project path="external/android-visualizer" name="CyanogenMod/android_external_android-visualizer" />
+  <!--project path="external/android/support-prebuilt" name="CyanogenMod/external_android_support-prebuilt" revision="master" />
+  <!--project path="external/ant-glob" name="CyanogenMod/android_external_ant-glob" groups="pdk-cw-fs" />
+  <!--project path="external/ant-wireless/ant_native" name="CyanogenMod/android_external_ant-wireless_ant_native" />
+  <!--project path="external/ant-wireless/ant_service" name="CyanogenMod/android_external_ant-wireless_ant_service" />
+  <!--project path="external/ant-wireless/antradio-library" name="CyanogenMod/android_external_ant-wireless_antradio-library" />
+  <!--project path="external/antlr" name="platform/external/antlr" groups="pdk-cw-fs,tradefed" remote="aosp" />
+  <!--project path="external/apache-harmony" name="platform/external/apache-harmony" groups="pdk-cw-fs" remote="aosp" />
+  <!--project path="external/apache-http" name="platform/external/apache-http" groups="pdk-cw-fs" remote="aosp" />
+  <!--project path="external/apache-qp" name="platform/external/apache-qp" groups="pdk-cw-fs" remote="aosp" />
+  <!--project path="external/apache-xml" name="platform/external/apache-xml" groups="pdk-cw-fs" remote="aosp" />
+  <!--project path="external/arduino" name="platform/external/arduino" groups="pdk-cw-fs" remote="aosp" />
+  <!--project path="external/bash" name="CyanogenMod/android_external_bash" />
   <project path="external/bison" name="platform/external/bison" groups="pdk" remote="aosp" />
-  <project path="external/blktrace" name="platform/external/blktrace" groups="pdk-cw-fs" remote="aosp" />
-  <project path="external/bluetooth/bluedroid" name="CyanogenMod/android_external_bluetooth_bluedroid" groups="pdk" />
+  <!--project path="external/blktrace" name="platform/external/blktrace" groups="pdk-cw-fs" remote="aosp" />
+  <!--project path="external/bluetooth/bluedroid" name="CyanogenMod/android_external_bluetooth_bluedroid" groups="pdk" />
   <project path="external/bouncycastle" name="CyanogenMod/android_external_bouncycastle" />
-  <project path="external/bsdiff" name="platform/external/bsdiff" groups="pdk" remote="aosp" />
-  <project path="external/bson" name="CyanogenMod/android_external_bson" />
+  <!--project path="external/bsdiff" name="platform/external/bsdiff" groups="pdk" remote="aosp" />
+  <!--project path="external/bson" name="CyanogenMod/android_external_bson" />
   <project path="external/busybox" name="CyanogenMod/android_external_busybox" />
   <project path="external/bzip2" name="platform/external/bzip2" groups="pdk" remote="aosp" />
-  <project path="external/cardslib" name="CyanogenMod/android_external_cardslib" />
-  <project path="external/ceres-solver" name="platform/external/ceres-solver" groups="pdk-cw-fs" remote="aosp" />
+  <!--project path="external/cardslib" name="CyanogenMod/android_external_cardslib" />
+  <!--project path="external/ceres-solver" name="platform/external/ceres-solver" groups="pdk-cw-fs" remote="aosp" />
   <project path="external/checkpolicy" name="platform/external/checkpolicy" groups="pdk" remote="aosp" />
-  <project path="external/chromium-libpac" name="platform/external/chromium-libpac" remote="aosp" />
-  <project path="external/chromium-trace" name="platform/external/chromium-trace" groups="pdk" remote="aosp" />
-  <project path="external/chromium_org" name="CyanogenMod/android_external_chromium_org" />
-  <project path="external/chromium_org/sdch/open-vcdiff" name="platform/external/chromium_org/sdch/open-vcdiff" remote="aosp" />
-  <project path="external/chromium_org/testing/gtest" name="platform/external/chromium_org/testing/gtest" remote="aosp" />
-  <project path="external/chromium_org/third_party/WebKit" name="platform/external/chromium_org/third_party/WebKit" remote="aosp" />
-  <project path="external/chromium_org/third_party/angle" name="platform/external/chromium_org/third_party/angle" remote="aosp" />
-  <project path="external/chromium_org/third_party/boringssl/src" name="CyanogenMod/android_external_chromium_org_third_party_boringssl_src" />
-  <project path="external/chromium_org/third_party/brotli/src" name="platform/external/chromium_org/third_party/brotli/src" remote="aosp" />
-  <project path="external/chromium_org/third_party/eyesfree/src/android/java/src/com/googlecode/eyesfree/braille" name="platform/external/chromium_org/third_party/eyesfree/src/android/java/src/com/googlecode/eyesfree/braille" remote="aosp" />
-  <project path="external/chromium_org/third_party/freetype" name="platform/external/chromium_org/third_party/freetype" remote="aosp" />
-  <project path="external/chromium_org/third_party/icu" name="platform/external/chromium_org/third_party/icu" remote="aosp" />
-  <project path="external/chromium_org/third_party/leveldatabase/src" name="platform/external/chromium_org/third_party/leveldatabase/src" remote="aosp" />
-  <project path="external/chromium_org/third_party/libaddressinput/src" name="platform/external/chromium_org/third_party/libaddressinput/src" remote="aosp" />
-  <project path="external/chromium_org/third_party/libjingle/source/talk" name="platform/external/chromium_org/third_party/libjingle/source/talk" remote="aosp" />
-  <project path="external/chromium_org/third_party/libjpeg_turbo" name="platform/external/chromium_org/third_party/libjpeg_turbo" remote="aosp" />
-  <project path="external/chromium_org/third_party/libphonenumber/src/phonenumbers" name="platform/external/chromium_org/third_party/libphonenumber/src/phonenumbers" remote="aosp" />
-  <project path="external/chromium_org/third_party/libphonenumber/src/resources" name="platform/external/chromium_org/third_party/libphonenumber/src/resources" remote="aosp" />
-  <project path="external/chromium_org/third_party/libsrtp" name="platform/external/chromium_org/third_party/libsrtp" remote="aosp" />
-  <project path="external/chromium_org/third_party/libvpx" name="platform/external/chromium_org/third_party/libvpx" remote="aosp" />
-  <project path="external/chromium_org/third_party/libyuv" name="platform/external/chromium_org/third_party/libyuv" remote="aosp" />
-  <project path="external/chromium_org/third_party/mesa/src" name="platform/external/chromium_org/third_party/mesa/src" remote="aosp" />
-  <project path="external/chromium_org/third_party/openmax_dl" name="platform/external/chromium_org/third_party/openmax_dl" remote="aosp" />
-  <project path="external/chromium_org/third_party/opus/src" name="platform/external/chromium_org/third_party/opus/src" remote="aosp" />
-  <project path="external/chromium_org/third_party/ots" name="platform/external/chromium_org/third_party/ots" remote="aosp" />
-  <project path="external/chromium_org/third_party/sfntly/cpp/src" name="platform/external/chromium_org/third_party/sfntly/cpp/src" remote="aosp" />
-  <project path="external/chromium_org/third_party/skia" name="platform/external/chromium_org/third_party/skia" remote="aosp" />
-  <project path="external/chromium_org/third_party/smhasher/src" name="platform/external/chromium_org/third_party/smhasher/src" remote="aosp" />
-  <project path="external/chromium_org/third_party/usrsctp/usrsctplib" name="platform/external/chromium_org/third_party/usrsctp/usrsctplib" remote="aosp" />
-  <project path="external/chromium_org/third_party/webrtc" name="platform/external/chromium_org/third_party/webrtc" remote="aosp" />
-  <project path="external/chromium_org/third_party/yasm/source/patched-yasm" name="platform/external/chromium_org/third_party/yasm/source/patched-yasm" remote="aosp" />
-  <project path="external/chromium_org/tools/grit" name="platform/external/chromium_org/tools/grit" remote="aosp" />
-  <project path="external/chromium_org/tools/gyp" name="platform/external/chromium_org/tools/gyp" remote="aosp" />
-  <project path="external/chromium_org/v8" name="CyanogenMod/android_external_chromium_org_v8" />
-  <project path="external/clang" name="platform/external/clang" groups="pdk" remote="aosp" />
-  <project path="external/cmockery" name="platform/external/cmockery" remote="aosp" />
+  <!--project path="external/chromium-libpac" name="platform/external/chromium-libpac" remote="aosp" />
+  <!--project path="external/chromium-trace" name="platform/external/chromium-trace" groups="pdk" remote="aosp" />
+  <!--project path="external/chromium_org" name="CyanogenMod/android_external_chromium_org" />
+  <!--project path="external/chromium_org/sdch/open-vcdiff" name="platform/external/chromium_org/sdch/open-vcdiff" remote="aosp" />
+  <!--project path="external/chromium_org/testing/gtest" name="platform/external/chromium_org/testing/gtest" remote="aosp" />
+  <!--project path="external/chromium_org/third_party/WebKit" name="platform/external/chromium_org/third_party/WebKit" remote="aosp" />
+  <!--project path="external/chromium_org/third_party/angle" name="platform/external/chromium_org/third_party/angle" remote="aosp" />
+  <!--project path="external/chromium_org/third_party/boringssl/src" name="CyanogenMod/android_external_chromium_org_third_party_boringssl_src" />
+  <!--project path="external/chromium_org/third_party/brotli/src" name="platform/external/chromium_org/third_party/brotli/src" remote="aosp" />
+  <!--project path="external/chromium_org/third_party/eyesfree/src/android/java/src/com/googlecode/eyesfree/braille" name="platform/external/chromium_org/third_party/eyesfree/src/android/java/src/com/googlecode/eyesfree/braille" remote="aosp" />
+  <!--project path="external/chromium_org/third_party/freetype" name="platform/external/chromium_org/third_party/freetype" remote="aosp" />
+  <!--project path="external/chromium_org/third_party/icu" name="platform/external/chromium_org/third_party/icu" remote="aosp" />
+  <!--project path="external/chromium_org/third_party/leveldatabase/src" name="platform/external/chromium_org/third_party/leveldatabase/src" remote="aosp" />
+  <!--project path="external/chromium_org/third_party/libaddressinput/src" name="platform/external/chromium_org/third_party/libaddressinput/src" remote="aosp" />
+  <!--project path="external/chromium_org/third_party/libjingle/source/talk" name="platform/external/chromium_org/third_party/libjingle/source/talk" remote="aosp" />
+  <!--project path="external/chromium_org/third_party/libjpeg_turbo" name="platform/external/chromium_org/third_party/libjpeg_turbo" remote="aosp" />
+  <!--project path="external/chromium_org/third_party/libphonenumber/src/phonenumbers" name="platform/external/chromium_org/third_party/libphonenumber/src/phonenumbers" remote="aosp" />
+  <!--project path="external/chromium_org/third_party/libphonenumber/src/resources" name="platform/external/chromium_org/third_party/libphonenumber/src/resources" remote="aosp" />
+  <!--project path="external/chromium_org/third_party/libsrtp" name="platform/external/chromium_org/third_party/libsrtp" remote="aosp" />
+  <!--project path="external/chromium_org/third_party/libvpx" name="platform/external/chromium_org/third_party/libvpx" remote="aosp" />
+  <!--project path="external/chromium_org/third_party/libyuv" name="platform/external/chromium_org/third_party/libyuv" remote="aosp" />
+  <!--project path="external/chromium_org/third_party/mesa/src" name="platform/external/chromium_org/third_party/mesa/src" remote="aosp" />
+  <!--project path="external/chromium_org/third_party/openmax_dl" name="platform/external/chromium_org/third_party/openmax_dl" remote="aosp" />
+  <!--project path="external/chromium_org/third_party/opus/src" name="platform/external/chromium_org/third_party/opus/src" remote="aosp" />
+  <!--project path="external/chromium_org/third_party/ots" name="platform/external/chromium_org/third_party/ots" remote="aosp" />
+  <!--project path="external/chromium_org/third_party/sfntly/cpp/src" name="platform/external/chromium_org/third_party/sfntly/cpp/src" remote="aosp" />
+  <!--project path="external/chromium_org/third_party/skia" name="platform/external/chromium_org/third_party/skia" remote="aosp" />
+  <!--project path="external/chromium_org/third_party/smhasher/src" name="platform/external/chromium_org/third_party/smhasher/src" remote="aosp" />
+  <!--project path="external/chromium_org/third_party/usrsctp/usrsctplib" name="platform/external/chromium_org/third_party/usrsctp/usrsctplib" remote="aosp" />
+  <!--project path="external/chromium_org/third_party/webrtc" name="platform/external/chromium_org/third_party/webrtc" remote="aosp" />
+  <!--project path="external/chromium_org/third_party/yasm/source/patched-yasm" name="platform/external/chromium_org/third_party/yasm/source/patched-yasm" remote="aosp" />
+  <!--project path="external/chromium_org/tools/grit" name="platform/external/chromium_org/tools/grit" remote="aosp" />
+  <!--project path="external/chromium_org/tools/gyp" name="platform/external/chromium_org/tools/gyp" remote="aosp" />
+  <!--project path="external/chromium_org/v8" name="CyanogenMod/android_external_chromium_org_v8" />
+  <!--project path="external/clang" name="platform/external/clang" groups="pdk" remote="aosp" />
+  <!--project path="external/cmockery" name="platform/external/cmockery" remote="aosp" />
   <project path="external/compiler-rt" name="platform/external/compiler-rt" groups="pdk" remote="aosp" />
-  <project path="external/connectivity" name="CyanogenMod/android_external_connectivity" />
-  <project path="external/conscrypt" name="platform/external/conscrypt" groups="pdk-cw-fs" remote="aosp" />
-  <project path="external/curl" name="CyanogenMod/android_external_curl" />
-  <project path="external/deqp" name="platform/external/deqp" remote="aosp" />
-  <project path="external/dexmaker" name="platform/external/dexmaker" groups="pdk-cw-fs" remote="aosp" />
-  <project path="external/dhcpcd" name="CyanogenMod/android_external_dhcpcd" groups="pdk-cw-fs" />
-  <project path="external/dnsmasq" name="CyanogenMod/android_external_dnsmasq" groups="pdk" />
-  <project path="external/doclava" name="platform/external/doclava" groups="pdk-cw-fs,tradefed" remote="aosp" />
-  <project path="external/dropbear" name="CyanogenMod/android_external_dropbear" />
-  <project path="external/droiddriver" name="platform/external/droiddriver" groups="pdk-cw-fs" remote="aosp" />
+  <!--project path="external/connectivity" name="CyanogenMod/android_external_connectivity" />
+  <!--project path="external/conscrypt" name="platform/external/conscrypt" groups="pdk-cw-fs" remote="aosp" />
+  <!--project path="external/curl" name="CyanogenMod/android_external_curl" />
+  <!--project path="external/deqp" name="platform/external/deqp" remote="aosp" />
+  <!--project path="external/dexmaker" name="platform/external/dexmaker" groups="pdk-cw-fs" remote="aosp" />
+  <!--project path="external/dhcpcd" name="CyanogenMod/android_external_dhcpcd" groups="pdk-cw-fs" />
+  <!--project path="external/dnsmasq" name="CyanogenMod/android_external_dnsmasq" groups="pdk" />
+  <!--project path="external/doclava" name="platform/external/doclava" groups="pdk-cw-fs,tradefed" remote="aosp" />
+  <!--project path="external/dropbear" name="CyanogenMod/android_external_dropbear" />
+  <!--project path="external/droiddriver" name="platform/external/droiddriver" groups="pdk-cw-fs" remote="aosp" />
   <project path="external/e2fsprogs" name="CyanogenMod/android_external_e2fsprogs" groups="pdk" />
-  <project path="external/easymock" name="platform/external/easymock" groups="pdk-cw-fs,tradefed" remote="aosp" />
-  <project path="external/ebtables" name="CyanogenMod/android_external_ebtables" />
-  <project path="external/eclipse-basebuilder" name="platform/external/eclipse-basebuilder" groups="pdk-cw-fs" remote="aosp" />
-  <project path="external/eclipse-windowbuilder" name="platform/external/eclipse-windowbuilder" groups="pdk-cw-fs" remote="aosp" />
-  <project path="external/eigen" name="platform/external/eigen" groups="pdk-cw-fs" remote="aosp" />
+  <!--project path="external/easymock" name="platform/external/easymock" groups="pdk-cw-fs,tradefed" remote="aosp" />
+  <!--project path="external/ebtables" name="CyanogenMod/android_external_ebtables" />
+  <!--project path="external/eclipse-basebuilder" name="platform/external/eclipse-basebuilder" groups="pdk-cw-fs" remote="aosp" />
+  <!--project path="external/eclipse-windowbuilder" name="platform/external/eclipse-windowbuilder" groups="pdk-cw-fs" remote="aosp" />
+  <!--project path="external/eigen" name="platform/external/eigen" groups="pdk-cw-fs" remote="aosp" />
   <project path="external/elfutils" name="platform/external/elfutils" groups="pdk" remote="aosp" />
-  <project path="external/emma" name="platform/external/emma" groups="pdk-cw-fs,tradefed" remote="aosp" />
+  <!--project path="external/emma" name="platform/external/emma" groups="pdk-cw-fs,tradefed" remote="aosp" />
   <project path="external/esd" name="platform/external/esd" groups="pdk-cw-fw" remote="aosp" />
   <project path="external/exfat" name="CyanogenMod/android_external_exfat" />
   <project path="external/expat" name="platform/external/expat" groups="pdk" remote="aosp" />
