@@ -569,7 +569,7 @@
   <project path="system/core" name="CyanogenMod/android_system_core" groups="pdk" clone-depth="1" />
   <project path="system/extras" name="CyanogenMod/android_system_extras" groups="pdk" clone-depth="1" />
   <!--project path="system/extras/su" name="CyanogenMod/android_system_extras_su" /> -->
-  <!--project path="system/keymaster" name="CyanogenMod/android_system_keymaster" groups="pdk" /> -->
+  <project path="system/keymaster" name="CyanogenMod/android_system_keymaster" groups="pdk" />
   <!--project path="system/media" name="CyanogenMod/android_system_media" groups="pdk" /> -->
   <project path="system/netd" name="CyanogenMod/android_system_netd" groups="pdk" clone-depth="1" />
   <!--project path="system/qcom" name="CyanogenMod/android_system_qcom" groups="qcom" /> -->
