@@ -53,6 +53,7 @@
   <!-- project path="external/ant-wireless/antradio-library" name="CyanogenMod/android_external_ant-wireless_antradio-library" /> -->
   <!-- project path="external/apache-http" name="CyanogenMod/android_external_apache-http" groups="pdk" /> -->
   <!-- project path="external/bash" name="CyanogenMod/android_external_bash" /> -->
+  <!--project path="external/ahbottomnavigation" name="CyanogenMod/android_external_ahbottomnavigation" /> -->
   <project path="external/boringssl" name="CyanogenMod/android_external_boringssl" groups="pdk" />
   <project path="external/bouncycastle" name="CyanogenMod/android_external_bouncycastle" groups="pdk" />
   <!-- project path="external/brctl" name="CyanogenMod/android_external_brctl" /> -->
@@ -94,7 +95,6 @@
   <!-- project path="external/libnfc-nxp" name="CyanogenMod/android_external_libnfc-nxp" groups="pdk" /> -->
   <!-- project path="external/libnfnetlink" name="CyanogenMod/android_external_libnfnetlink" /> -->
   <!-- project path="external/libphonenumbergoogle" name="CyanogenMod/android_external_libphonenumbergoogle" /> -->
-  <project path="external/libpng" name="CyanogenMod/android_external_libpng" groups="pdk" />
   <project path="external/libselinux" name="CyanogenMod/android_external_libselinux" groups="pdk" />
   <!-- project path="external/libtar" name="CyanogenMod/android_external_libtar" /> -->
   <!-- project path="external/libusb" name="CyanogenMod/android_external_libusb" groups="pdk-cw-fs,pdk-fs" /> -->
@@ -393,6 +393,7 @@
   <!-- project path="external/libopus" name="platform/external/libopus" groups="pdk" remote="aosp" /> -->
   <!-- project path="external/libpcap" name="platform/external/libpcap" groups="pdk,pdk-cw-fs,pdk-fs" remote="aosp" /> -->
   <!-- project path="external/libphonenumber" name="platform/external/libphonenumber" groups="pdk-cw-fs,pdk-fs" remote="aosp" /> -->
+  <project path="external/libpng" name="platform/external/libpng" groups="pdk" remote="aosp" />
   <project path="external/libunwind" name="platform/external/libunwind" groups="pdk" remote="aosp" />
   <!-- project path="external/libusb-compat" name="platform/external/libusb-compat" groups="pdk-cw-fs,pdk-fs" remote="aosp" /> -->
   <!-- project path="external/libutf" name="platform/external/libutf" groups="pdk-cw-fs,pdk-fs" remote="aosp" /> -->
