@@ -17,7 +17,7 @@
            review="gerrit.twrp.me"
            fetch="https://github.com/TeamWin" />
 
-  <default revision="refs/heads/cm-13.0"
+  <default revision="refs/heads/cm-14.1"
            remote="github"
            sync-c="true"
            sync-j="4" />
@@ -27,10 +27,11 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="android" name="CyanogenMod/android" />
+  <project path="build/kati" name="CyanogenMod/android_build_kati" groups="pdk,tradefed" />
   <!-- project path="abi/cpp" name="CyanogenMod/android_abi_cpp" groups="pdk" /> -->
   <!-- project path="art" name="CyanogenMod/android_art" groups="pdk" /> -->
   <project path="bionic" name="CyanogenMod/android_bionic" groups="pdk" />
-  <project path="bootable/recovery" name="omnirom/android_bootable_recovery" remote="github" revision="android-6.0" groups="pdk-cw-fs"/>
+  <project path="bootable/recovery" name="omnirom/android_bootable_recovery" remote="github" revision="android-7.1" groups="pdk-cw-fs"/>
   <!-- project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" revision="marshmallow-cts-release" remote="aosp" /> -->
   <!-- project path="dalvik" name="CyanogenMod/android_dalvik" groups="pdk-cw-fs,pdk-fs" /> -->
   <!-- project path="development" name="CyanogenMod/android_development" groups="pdk-cw-fs,pdk-fs" /> -->

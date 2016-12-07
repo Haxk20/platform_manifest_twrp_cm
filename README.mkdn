@@ -46,7 +46,7 @@ familiar with [Git and Repo](http://source.android.com/download/using-repo).
 
 To initialize your local repository using the CM trees to build TWRP, use a command like this:
 
-    repo init -u git://github.com/lj50036/platform_manifest_twrp_cm.git -b twrp-13.0
+    repo init -u git://github.com/HostZero/platform_manifest_twrp_cm.git -b twrp-14.1
 
 Then to sync up:
 
